@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Box from '../App/App.styled';
 
-// console.log(FeedbackOptions());
-
 export class App extends Component {
   state = {
     good: 1,
@@ -11,14 +9,6 @@ export class App extends Component {
   };
 
   render() {
-    // console.log(this.handleIncrement);
-
     return <Box>hello</Box>;
   }
 }
-
-// countPositiveFeedbackPercentage = () => {
-//   return Math.floor(
-//     (this.state.good * 100) / Number(this.countTotalFeedback())
-//   );
-// };
