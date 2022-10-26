@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
-import Statistics from '../Statistics/Statistics';
-import { Section } from '../Section/Section';
 import Box from '../App/App.styled';
 
 // console.log(FeedbackOptions());
