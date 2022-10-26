@@ -13,50 +13,10 @@ export class App extends Component {
     bad: 0,
   };
 
-  handleIncrement = event => {
-    const value = event.currentTarget.value;
-    console.log(value);
-
-    this.setState(prevState => {
-      return {
-        [value]: prevState[value] + 1,
-      };
-    });
-  };
-
-  countTotalFeedback = () => {
-    let total = 0;
-    const counts = Object.values(this.state);
-    for (const count of counts) {
-      total += count;
-    }
-    return total;
-  };
-  countPositiveFeedbackPercentage() {}
-
   render() {
     // console.log(this.handleIncrement);
 
-    return (
-      <Box>
-        <Section title={'Please leave feedback'}>
-          <FeedbackOptions
-            options={Object.keys(this.state)}
-            onLeaveFeedback={this.handleIncrement}
-          />
-        </Section>
-
-        <Section title={'Statistics'}>
-          <Statistics
-            good={this.state.good}
-            neutral={this.state.neutral}
-            bad={this.state.bad}
-            total={this.countTotalFeedback()}
-            positivePercentage={this.countPositiveFeedbackPercentage()}
-          />
-        </Section>
-      </Box>
-    );
+    return <Box>hello</Box>;
   }
 }
 
